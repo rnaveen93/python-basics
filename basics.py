@@ -46,3 +46,63 @@ print(f"Large number with underscores: {large_number}")
 PI = 3.14159
 print(f"Value of PI: {PI}")
 
+
+# Lists
+# Creating a list
+fruits = ["apple", "banana", "cherry"]
+print(f"Fruits: {fruits}")
+
+# Accessing elements in a list
+print(f"First fruit: {fruits[0]}")
+print(f"Last fruit: {fruits[-1]}")
+
+# Modifying elements in a list
+fruits[1] = "orange"
+print(f"Modified fruits: {fruits}")
+
+# Adding elements to a list
+fruits.append("grape")
+print(f"Fruits after appending: {fruits}")
+
+# Removing elements from a list
+fruits.remove("orange")
+print(f"Fruits after removing orange: {fruits}")
+
+# Sorting a list
+fruits.sort()
+print(f"Sorted fruits: {fruits}")
+
+# Reversing a list
+fruits.reverse()
+print(f"Reversed fruits: {fruits}")
+
+# List slicing
+print(f"First two fruits: {fruits[:2]}")
+print(f"Last two fruits: {fruits[-2:]}")
+
+# List length
+print(f"Number of fruits: {len(fruits)}")
+
+# List comprehension
+squared_numbers = [x**2 for x in range(10)]
+print(f"Squared numbers: {squared_numbers}")
+
+#Loop the list
+magicians = ["Alice", "David", "Eve"]
+for magician in magicians:
+    print(f"Magician name is {magician}\n")
+
+# Looping through a list with index
+for index, fruit in enumerate(fruits):
+    print(f"Fruit {index + 1}: {fruit}")
+
+# Looping through a list with range
+for i in range(len(fruits)):
+    print(f"Fruit {i + 1}: {fruits[i]}")
+
+# Looping through a list
+for fruit in fruits:
+    print(f"Fruit: {fruit}")
+
+
+    
