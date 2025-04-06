@@ -105,4 +105,67 @@ for fruit in fruits:
     print(f"Fruit: {fruit}")
 
 
-    
+# Numberical list, prnts from 1 to 5
+for value in range(1, 6):
+    print(value)
+
+#List of numbers
+print("\nList of numbers:")
+numbers = list(range(1, 6))
+print(numbers)
+
+
+#List of even numbers
+print("\nList of even numbers:")
+numbers = list(range(2, 10, 2))
+print(numbers)
+
+#Squares of numbers
+print("\nSquares of numbers:")
+squares = []
+for values in range(1, 11):
+    square = values ** 2
+    squares.append(square)
+print(squares)
+
+#Squares of numbers - consise
+print("\nSquares of numbers:")
+squares = []
+for values in range(1, 11):
+    squares.append(values ** 2)
+print(squares)
+
+#Simple statistics with list of numbers
+
+print("\nSimple statistics with list of numbers:")
+numbers = list(range(1, 11))
+print(f"Numbers: {numbers}")
+print(f"Min {min(numbers)}")
+print(f"Max {max(numbers)}")
+print(f"Sum {sum(numbers)}")
+
+# List comprehensions
+print("\n List comprehensions:")
+
+squares = [value ** 2 for value in range(1, 11)]
+print(squares)
+
+print("\n square of even numbers list comprehensions:")
+even_sqaures = [value ** 2 for value in range(2, 11, 2)]
+print(even_sqaures)
+
+
+#List slicing
+players_list = ['Naveen', "Kumar", "Alice", "Bob", "Charlie"]
+print(f"Print first three players:{players_list[:3]}")
+
+#Copying a list
+my_foods =["pizza", "burger", "meals"]
+
+breakfast = my_foods[:]
+print(f"BreakFast: {breakfast}")
+print(f"my_foods:{my_foods}")
+
+breakfast.append("Idli")
+print(f"BreakFast: {breakfast}")
+print(f"my_foods:{my_foods}")
